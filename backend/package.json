@@ -5,9 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "frontend -d build"
   },
   "author": "",
+  "homepage": "https://github.com/rakshit0011/Quizzie-The-Quiz-Platform",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
